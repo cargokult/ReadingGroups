@@ -1,0 +1,37 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.6.+'
+    }
+}
+apply plugin: 'android'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "17.0.0"
+
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 17
+    }
+}
+
+idea {
+
+    module {
+        sourceDirs += file('/usr/local/Cellar/android-sdk/22.3/sources/android-17')
+        downloadJavadoc = true
+        downloadSources = true
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:+'
+}

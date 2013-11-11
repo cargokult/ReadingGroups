@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="ComAndroidSupportAppcompatV71900.aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ReadingGroups/build/exploded-bundles/ComAndroidSupportAppcompatV71900.aar/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/ReadingGroups/build/exploded-bundles/ComAndroidSupportAppcompatV71900.aar/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file:///usr/local/Cellar/android-sdk/22.3/sources/android-17" />
+      <root url="file:///usr/local/Cellar/android-sdk/22.3/sources/android-17" />
+    </SOURCES>
+  </library>
+</component>
