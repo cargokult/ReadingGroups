@@ -34,4 +34,5 @@ idea {
 
 dependencies {
     compile 'com.android.support:appcompat-v7:+'
+    compile group: 'com.firebase', name: 'firebase-client', version: '[1.0.7,)'
 }

@@ -5,9 +5,6 @@
       <root url="file://$PROJECT_DIR$/ReadingGroups/build/exploded-bundles/ComAndroidSupportAppcompatV71900.aar/res" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="file:///usr/local/Cellar/android-sdk/22.3/sources/android-17" />
-      <root url="file:///usr/local/Cellar/android-sdk/22.3/sources/android-17" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>
