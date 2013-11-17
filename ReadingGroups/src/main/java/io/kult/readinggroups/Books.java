@@ -77,6 +77,23 @@ public class Books extends ActionBarActivity implements ActionBar.TabListener {
                             .setText(mSectionsPagerAdapter.getPageTitle(i))
                             .setTabListener(this));
         }
+
+        Firebase ref = new Firebase("https://reading-groups.firebaseio.com/");
+        ref.addValueEventListener(new ValueEventListener() {
+
+            @Override
+            public void onDataChange(DataSnapshot snap) {
+                System.out.println(snap.getName() + " -> " + snap.getValue());
+                TextView textView = (TextView) findViewById(R.id.section_label);
+                textView.setText(snap.getValue().toString());
+            }
+
+            @Override
+            public void onCancelled(FirebaseError firebaseError) {
+
+            }
+        });
+
     }
 
 
@@ -180,29 +197,7 @@ public class Books extends ActionBarActivity implements ActionBar.TabListener {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_books, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
-
-            // Create a reference to a Firebase location
-            Firebase ref = new Firebase("https://reading-groups.firebaseio.com/");
-
-            // Write data to Firebase
-            ref.setValue("test");
-
-            // Read data and react to changes
-            ref.addValueEventListener(new ValueEventListener() {
-
-                @Override
-                public void onDataChange(DataSnapshot snap) {
-                    System.out.println(snap.getName() + " -> " + snap.getValue());
-                }
-
-                @Override
-                public void onCancelled(FirebaseError firebaseError) {
-
-                }
-
-            });
-
+            //textView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;
         }
     }
