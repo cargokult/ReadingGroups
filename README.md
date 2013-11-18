@@ -10,8 +10,9 @@ Reading Groups app helps with discovery and facilitation of (technical) Reading 
 * see past reading groups
 
 ### Todo
-* integrate with firebase
-
+* ~~add firebase dependency~~
+* ~~follow firebase tutorial~~
+* how to organize activities and fragments
 
 ### Domain
 * books

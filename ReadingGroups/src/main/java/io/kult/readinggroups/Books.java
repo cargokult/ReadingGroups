@@ -85,7 +85,7 @@ public class Books extends ActionBarActivity implements ActionBar.TabListener {
             public void onDataChange(DataSnapshot snap) {
                 System.out.println(snap.getName() + " -> " + snap.getValue());
                 TextView textView = (TextView) findViewById(R.id.section_label);
-                textView.setText(snap.getValue().toString());
+                textView.setText(snap.getValue(String.class));
             }
 
             @Override
