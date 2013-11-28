@@ -13,6 +13,8 @@ Reading Groups app helps with discovery and facilitation of (technical) Reading 
 * ~~add firebase dependency~~
 * ~~follow firebase tutorial~~
 * how to organize activities and fragments
+* pass json events
+* book structure
 
 ### Domain
 * books
