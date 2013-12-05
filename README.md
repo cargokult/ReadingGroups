@@ -1,5 +1,7 @@
 # Reading Groups
 
+[![Build Status](https://drone.io/github.com/cargokult/ReadingGroups/status.png)](https://drone.io/github.com/cargokult/ReadingGroups/latest)
+
 Reading Groups app helps with discovery and facilitation of (technical) Reading Groups in your company.
 
 ## Features
