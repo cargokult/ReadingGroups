@@ -1,28 +1,27 @@
-Reading Groups
-==============
+# Reading Groups
 
 Reading Groups app helps with discovery and facilitation of (technical) Reading Groups in your company.
 
-### Features
+## Features
 * see tech books
 * propose reading groups
 * see current reading groups
 * see past reading groups
 
-### Todo
+## Todo
 * ~~add firebase dependency~~
 * ~~follow firebase tutorial~~
 * how to organize activities and fragments
 * pass json events
 * book structure
 
-### Domain
+## Domain
 * books
 * reading groups
 * user profiles
 * user books
 
-#### Book
+### Book
 * see goodreads api
 
 ### User Profile
@@ -33,7 +32,7 @@ Reading Groups app helps with discovery and facilitation of (technical) Reading 
 * wants to read
 * read
 
-#### Reading Group
+### Reading Group
 * book
 * facilitator
 * interval
@@ -44,17 +43,21 @@ Reading Groups app helps with discovery and facilitation of (technical) Reading 
 * active
 * finished
 
-### Context
+## Context
 [app]
 
-### Container
+## Container
 [auth]-----[app]-----[firebase]
 
-### Integration
+## Integration
 * firebase
 * Goodreads api
 * ADS
 * emails
 
-### Monitoring
-* tbd
+## Monitoring
+* https://www.parse.com/
+
+## Resources
+* https://www.iconfinder.com/icons/185628/book_icon#size=512
+* https://www.iconfinder.com/icons/71619/book_moleskine_notes_pure_icon#size=512
